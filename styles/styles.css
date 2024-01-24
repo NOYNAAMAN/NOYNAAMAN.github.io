@@ -1,0 +1,663 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant&family=Heebo&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  font-family: "Assistant", sans-serif;
+}
+
+header {
+  background: rgba(255, 255, 255, 0.95);
+  max-height: 100px;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+}
+
+body {
+  direction: rtl;
+}
+
+main {
+  margin-top: 100px;
+}
+
+.navbar {
+  background: transparent;
+  display: flex;
+  padding: 0.5rem 0;
+  position: relative;
+  top: 0;
+  width: 100%;
+  max-height: 100px;
+}
+
+.navbar > .container-fluid {
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 110px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.collapse {
+  display: flex;
+  flex-basis: auto;
+  flex-grow: 1;
+  align-items: center;
+  margin-right: 3rem;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.nav-link {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  font-weight: 700;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  color: rgba(0, 0, 0, 0.65);
+  text-decoration: none;
+  padding: 8px 14px;
+  background-color: transparent;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #cecece;
+}
+.nav-link:focus {
+  background-color: #bdbdbd;
+}
+
+.img-hero img {
+  transform: rotate(0deg);
+}
+.img-hero img:hover {
+  transform: rotate(2deg);
+}
+
+.menu-button {
+  margin-right: 1rem;
+  margin-left: 1rem;
+  color: #fff;
+  background-color: #ddcef1;
+  border-radius: 5px;
+  font-size: 20px;
+  font-family: "Assistant", sans-serif;
+  padding: 0.375rem 0.75rem;
+  border: 1px solid #ab8cd5;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.bg-top-decoration {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0px;
+  z-index: -1;
+  width: 100%;
+  overflow: hidden;
+}
+.container-fluid {
+  padding: 0 110px;
+  overflow: hidden;
+  margin-right: auto;
+  margin-left: auto;
+}
+.hero-content {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0;
+}
+.side1 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  flex: 0 0 auto;
+  width: 50%;
+}
+.side2 {
+  flex: 0 0 auto;
+  width: 50%;
+}
+.img-hero img {
+  position: absolute;
+  transition: transform 0.2s;
+  width: 61%;
+  height: 850px;
+}
+
+.text-primary {
+  color: #8e76ca;
+  font-weight: 700;
+  font-size: 3.75rem;
+}
+
+.our-goal {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 2.1875rem;
+  line-height: 2;
+  font-weight: 500;
+  color: inherit;
+}
+
+.hero-list ul {
+  list-style-type: none;
+  list-style-image: url(../assets/images/check_ok_yes_icon.png);
+}
+
+.hero-list ul li {
+  line-height: 2.5;
+  font-size: 25px;
+}
+.hero-list li span {
+  padding-right: 15px;
+}
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 4px 5px 15px rgb(181, 177, 235);
+}
+
+.about {
+  background-image: url(../assets/images/background-can.png);
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+.image-about {
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+  padding-top: 25px;
+}
+#itsme {
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+}
+.text-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 25px;
+  text-align: center;
+}
+#pdf {
+  background-color: #a4a0d2;
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+  padding: 6px;
+  font-family: "Assistant", sans-serif;
+  font-weight: 800;
+  border: 3px solid #b6a5cb;
+}
+
+#container-gallery {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 50%;
+}
+
+.card {
+  height: 300px;
+  width: 200px;
+  margin: 2em;
+  box-shadow: 5px 5px 15px gray;
+  border-radius: 10px;
+  background-color: transparent;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  direction: ltr;
+}
+
+.card:hover {
+  background-color: gray;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.card-img {
+  background-image: url("../assets/project1.png");
+  width: 100%;
+  height: 30%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.gallery {
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.dots-decoration {
+  position: absolute;
+  right: 0;
+  bottom: 30%;
+  z-index: -1;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.project-title {
+  font-weight: 700;
+  font-size: 20px;
+  font-family: cursive;
+}
+
+.project-link {
+  background-color: #a4a0d2;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: aliceblue;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.section3 {
+  display: flex;
+  justify-content: center;
+
+  height: 500px;
+}
+
+.img-appointment {
+  width: 100%;
+  position: relative;
+  object-fit: cover;
+}
+
+.container-form-appointment {
+  background-color: #8e76ca;
+  width: 90%;
+  text-align: center;
+  border-radius: 14px;
+  height: 240px;
+  padding-top: 25px;
+  color: white;
+  font-size: 25px;
+  font-family: "Heebo";
+  position: absolute;
+  margin-top: 141px;
+}
+
+.form-appointment {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  padding: 0px 100px;
+}
+
+.form-appointment input[type="text"],
+.form-appointment input[type="email"],
+.form-appointment input[type="tel"],
+.form-appointment textarea {
+  text-align: right;
+  padding: 0px 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: transparent;
+  background-color: #f8f9fa;
+  font-family: "Heebo";
+  height: 60px;
+  flex: 1;
+}
+
+.form-appointment textarea {
+  flex: 2;
+  padding: 10px;
+  transition: font-size 1s ease;
+}
+
+.form-appointment textarea:focus {
+  font-size: 13px;
+}
+
+.form-control {
+  border-radius: 7px;
+  width: 30%;
+  font-family: "Heebo";
+  padding: 0px 10px;
+}
+
+.btn-form-appointment {
+  padding: 10px;
+
+  border-radius: 5px;
+  border: transparent;
+  background-color: #f6d776;
+  font-size: 16px;
+  font-family: "Heebo";
+  color: #0d070fb4;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.body-containerbar {
+  height: 450px;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  direction: ltr;
+}
+.bar-container {
+  position: relative;
+  max-width: 70%;
+  width: 100%;
+  background: #ffffff78;
+  margin: 0 15px;
+  padding: 10px 20px;
+  border-radius: 17px;
+}
+
+.bar-container .skill-box {
+  width: 100%;
+  margin: 25px 0;
+}
+
+.skill-box .titel-language {
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+  color: #8e76ca;
+  font-family: "Heebo";
+}
+
+.skill-bar {
+  background: #a4a0d2;
+  width: 100%;
+  height: 30px;
+  border-radius: 6px;
+  margin-top: 6px;
+}
+
+.skill-bar .skill-per {
+  position: relative;
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+  background: #fee63b;
+  animation: progress 0.4s ease-in-out forwards;
+  opacity: 0;
+}
+
+.skill-bar .css {
+  width: 95%;
+}
+.skill-bar .js {
+  width: 70%;
+}
+
+@keyframes progress {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.skill-bar .toltip {
+  position: absolute;
+  right: -14px;
+  top: -34px;
+  font-size: 15px;
+  font-weight: 500;
+  color: black;
+  padding: 2px 6px;
+  border-radius: 3px;
+  background: rgb(181, 177, 235);
+  z-index: 1;
+}
+
+.toltip::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  height: 10px;
+  width: 10px;
+  z-index: -1;
+  background-color: rgb(181, 177, 235);
+  transform: translateX(-50%) rotate(45deg);
+}
+#titel-process {
+  text-align: center;
+  font-family: "Heebo";
+  font-size: 45px;
+  color: #7e75e7;
+  text-shadow: 0px 3px #dddcde;
+}
+.titel-language {
+  font-weight: 700;
+  color: #7960b9;
+  font-size: 20px;
+}
+
+.container-footer {
+  background-color: #7960b9;
+}
+
+.img-iconfooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 55px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.copyright {
+  color: white;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  background-color: black;
+  padding: 4px 6px;
+}
+
+.pic-footer {
+  width: 40px;
+}
+
+.container-process {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  background: #ddcef11f;
+}
+.phone-img {
+  padding-left: 80px;
+}
+.my-process {
+  height: 500px;
+}
+.process-list {
+  line-height: 100px;
+  font-size: 35px;
+  font-family: "Heebo";
+}
+
+.my-process h1 {
+  font-size: 60px;
+  font-weight: 900;
+  padding-top: 25px;
+  font-family: "Heebo";
+  color: #987be5;
+}
+.process-list ul {
+  list-style-type: none;
+  list-style-image: url(../assets/images/staryellow.png);
+}
+
+@media only screen and (max-width: 767px) {
+  .container-fluid {
+    padding: 0 15px;
+  }
+  .side1 {
+    width: 100%;
+  }
+  .text-primary {
+    font-size: 35px;
+  }
+  .our-goal {
+    font-size: 20px;
+  }
+  .hero-list ul li {
+    line-height: 2.5;
+    font-size: 16px;
+  }
+  .side2 {
+    display: none;
+  }
+  .body-containerbar {
+    height: 395px;
+  }
+  .bar-container {
+    width: 100%;
+    max-width: 100%;
+  }
+  #titel-process {
+    font-size: 29px;
+  }
+  .about {
+    background-size: cover;
+    padding-top: 4px;
+  }
+  .image-about {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    padding-top: 5px;
+  }
+  #itsme {
+    height: 280px;
+    width: 288px;
+    border-radius: 50%;
+  }
+  .text-about {
+    font-size: 20px;
+    font-weight: 900;
+    background: #ffffff63;
+  }
+  .gallery {
+    padding-top: 26px;
+  }
+  .dots-decoration {
+    display: none;
+  }
+  .section3 {
+    display: flex;
+    justify-content: center;
+    height: 560px;
+  }
+  .img-appointment {
+    width: 100%;
+    position: relative;
+    object-fit: cover;
+  }
+  .container-form-appointment {
+    background-color: #8e76ca;
+    height: auto;
+    padding: 25px 0;
+    margin-top: 38px;
+  }
+
+  #h3appointment {
+    font-size: 26px;
+  }
+  .text-white {
+    font-size: 15px;
+  }
+  .text-bold {
+    padding: 27px;
+    font-size: 18px;
+  }
+
+  .form-appointment {
+    display: flex;
+    justify-content: center;
+    padding: 0px 25px;
+    flex-direction: column;
+  }
+
+  .form-appointment input[type="text"],
+  .form-appointment input[type="email"],
+  .form-appointment input[type="tel"],
+  .form-appointment textarea {
+    font-size: 17px;
+    padding: 9px 0;
+  }
+
+  .container-process {
+    display: flex;
+    background: #ddcef11f;
+    flex-direction: column;
+  }
+  .phone-img {
+    padding-left: 0;
+  }
+
+  .pic-iphone {
+    width: 100%;
+  }
+  .my-process {
+    height: 400px;
+  }
+
+  .my-process h1 {
+    font-size: 45px;
+  }
+  .process-list {
+    line-height: 60px;
+    font-size: 21px;
+    padding-right: 5px;
+  }
+}

@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap");
+
+body {
+  background: url("../imgs/bg.png");
+  direction: rtl;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  height: 100%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.span {
+  text-align: center;
+  padding-right: 20px;
+}
+
+.logo img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.main {
+  background: rgba(162, 159, 159, 0.398);
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  padding-bottom: 45px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+* {
+  box-sizing: border-box;
+}
+
+.main-body {
+  display: flex;
+}
+.dogs-for-adoption {
+  flex-basis: 80%;
+}
+.dogs-recently-adopted {
+  flex-basis: 20%;
+}
+
+.gallery-title {
+  font-size: 24px;
+  color: #252525;
+  font-weight: 800;
+  font-family: "Heebo";
+  padding-right: 20px;
+}
+#title-form {
+  padding-right: 20px;
+  font-size: 45px;
+}
+
+.puppies-gallery {
+  display: flex;
+  max-width: 70%;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.puppies-item {
+  width: 120px;
+  height: 150px;
+}
+
+.puppy-img img {
+  width: 100%;
+}
+.dogs-gallery {
+  display: flex;
+  justify-content: space-evenly;
+}
+.dog-img img {
+  width: 100%;
+  height: 160px;
+}
+.adoptes-img img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid gray;
+}
+.adopted-gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.short {
+  flex-basis: 15%;
+}
+.long {
+  flex-basis: 40%;
+}
+.puppy-info span,
+.dog-info span {
+  display: block;
+  text-align: center;
+  font-weight: 400;
+  font-family: "Heebo", Arial, Helvetica, sans-serif;
+}
+.shadow {
+  box-shadow: 5px 8px 5px rgb(4 4 4 / 18%);
+}
+
+input {
+  display: block;
+  margin: 5px;
+  padding: 15px;
+  font-family: "Heebo";
+  width: 80%;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  text-align: right;
+}
+.form {
+  background-color: rgba(194, 193, 193, 0.488);
+  width: 35%;
+  margin: 50px;
+  border-radius: 3%;
+}
+.form label {
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  padding-right: 2%;
+}
+.form input[type="submit"],
+.form input[type="reset"] {
+  display: inline;
+  padding: 10px;
+  font-size: 18px;
+  font-family: "Tahoma", "Heebo", Arial;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    1deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgb(105, 99, 100) 100%
+  );
+  border: 1px solid #fff;
+  border-radius: 7px;
+  color: #000000;
+  width: 150px;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .main-body {
+    flex-direction: column;
+  }
+  .main {
+    background-color: rgba(255, 255, 255, 0.482);
+    max-width: 100%;
+    width: 100%;
+  }
+  .dog-img {
+    width: 100%;
+    height: 60px;
+  }
+  .puppies-gallery {
+    max-width: 100%;
+  }
+  .short,
+  .long {
+    flex-basis: inherit;
+  }
+  .dogs-gallery {
+    flex-direction: column;
+    width: 100%;
+  }
+  .dogs-item {
+    height: 250px;
+  }
+  .gallery-title {
+    font-size: 18px;
+  }
+
+  .main-body {
+    text-align: center;
+  }
+  .form {
+    background-color: rgba(194, 193, 193, 0.488);
+    border-radius: 3%;
+    width: 100%;
+    margin: auto;
+    padding-right: 5px;
+  }
+  .form input[type="tel"],
+  .form input[type="email"] {
+    text-align: right;
+  }
+
+  .logo {
+    padding-bottom: 10px;
+  }
+
+  #title-form {
+    font-size: 24px;
+  }
+}
