@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Noy Naaman - View Project 3</title>
 
     <link rel="stylesheet" href="../../styles/styles.css" />
     <link rel="stylesheet" href="../../styles/presentaion.css" />
@@ -13,38 +13,48 @@
     <header>
       <nav class="navbar">
         <div class="container-fluid">
-          <img
-            src="../../../portfolio/assets/images/web2-logo.png"
-            alt="Connvisor Digital"
-          />
+          <a href="../../index.html"
+            ><img src="../../assets/images/web2-logo.png" alt="logonoy"
+          /></a>
 
-          <div class="collapse">
+          <div class="collapse" id="menu-items">
             <div class="navbar-nav">
+              <a class="nav-link" href="../../index.html#text-primary">ראשי</a>
               <a class="nav-link" href="../../index.html#me">מי אנחנו </a>
               <a class="nav-link" href="../../index.html#gallerysc"
                 >גלריית פרויקטים</a
               >
-              <a class="nav-link" href="../../index.html#process"
-                >התהליך שלנו</a
-              >
+
               <a class="nav-link" href="../../index.html#contact-area"
                 >צרו קשר</a
               >
             </div>
           </div>
-
-          <a href="tel:073-3744200" class="menu-button"
-            >073-3744200 <i class="fa-solid fa-phone" aria-hidden="true"></i
-          ></a>
-          <button class="menu-button">
-            בואו נדבר <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
-          </button>
+          <div class="menu-buttons">
+            <a href="tel:0526720992" class="menu-button"
+              >0526720992 <i class="fa-solid fa-phone" aria-hidden="true"></i
+            ></a>
+            <a
+              href="https://wa.me/0526720992
+           "
+            >
+              <button class="menu-button">
+                לקביעת פגישה מהירה
+                <i
+                  class="fa-solid fa-paper-plane"
+                  aria-hidden="true"
+                ></i></button
+            ></a>
+          </div>
+          <a href="javascript:void(0);" class="hamburger-icon" onclick="menu()">
+            <i class="fa fa-bars"></i>
+          </a>
         </div>
       </nav>
     </header>
 
     <main class="main-presentation">
-      <h1 class="title-project">project 3</h1>
+      <h1 class="title-project">Project 3</h1>
       <div class="buttons">
         <a
           href="./assets/files/project3.zip"
@@ -63,5 +73,15 @@
       src="https://kit.fontawesome.com/97fe704a65.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      function menu() {
+        var x = document.getElementById("menu-items");
+        if (x.className === "collapse") {
+          x.className += " display";
+        } else {
+          x.className = "collapse";
+        }
+      }
+    </script>
   </body>
 </html>

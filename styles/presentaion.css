@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant&family=Heebo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Roboto+Slab:wght@900&family=Rubik+Doodle+Shadow&display=swap");
 .main-presentation {
   background-color: #4e2a8f65;
   text-align: center;
@@ -11,7 +13,7 @@
   font-size: 25px;
 }
 .title-project {
-  font-family: cursive;
+  font-family: "Roboto Slab";
 
   padding-bottom: 15px;
 }
@@ -19,6 +21,7 @@
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
+  font-family: "Roboto Slab";
 }
 
 .buttons > a {
@@ -50,4 +53,10 @@
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   margin: 5vh;
+}
+
+@media only screen and (max-width: 767px) {
+  .img-presentation > img {
+    width: 100%;
+  }
 }
