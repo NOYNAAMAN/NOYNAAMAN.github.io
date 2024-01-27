@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Assistant&family=Heebo:display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Heebo:wght@100..900&display=swap");
 
 * {
   margin: 0;
@@ -32,7 +32,7 @@ body {
   position: absolute;
   padding: 75px;
   height: 560px;
-  font-family: "Heebo";
+  font-family: "Heebo", Arial, Helvetica, sans-serif;
   font-weight: 800;
   color: #fff;
   text-align: right;
@@ -73,7 +73,7 @@ body {
   width: 45%;
   color: #fff;
   border-color: transparent;
-  font-family: "Heebo";
+  font-family: "Heebo", Arial, Helvetica, sans-serif;
   font-weight: 800;
   font-size: 15px;
 }

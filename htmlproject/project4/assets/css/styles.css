@@ -73,6 +73,10 @@
   padding: 0 68px;
   font: normal normal 600 14px/20px Varela Round;
   height: 35px;
+  background: #fff;
+  border: 0;
+  width: 100%;
+  border-radius: 0;
 }
 
 @media screen and (max-width: 790px) {

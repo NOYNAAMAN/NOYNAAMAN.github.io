@@ -1,4 +1,6 @@
-.heder {
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Heebo:wght@100..900&display=swap");
+
+.header {
   background-color: rgba(202, 178, 202, 0.854);
   height: 60px;
   width: 100%;
@@ -28,7 +30,7 @@
 }
 body {
   background: url("https://images.unsplash.com/photo-1618108571494-7065bc619e68?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zmxvd2VycyUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D");
-  font-family: "Open Sans", Tahoma;
+  font-family: "Heebo", Arial, Helvetica, sans-serif;
   margin: 0%;
 }
 .login-part {

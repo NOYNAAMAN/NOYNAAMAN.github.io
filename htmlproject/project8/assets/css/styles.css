@@ -167,7 +167,7 @@ form label {
   }
 
   .iphone-img img {
-    width: 100%;
+    max-width: 90px;
     height: 136px;
   }
   .text h1 {
