@@ -240,4 +240,7 @@ h2 {
   .form-login {
     padding: 0 25px;
   }
+  hr {
+    width: 100%;
+  }
 }
